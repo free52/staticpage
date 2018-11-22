@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+img {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  -webkit-transform: rotate(360deg);
+  animation: rotation 3s linear infinite;
+  border-radius: 50%;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
