@@ -8,6 +8,8 @@ var uglify = require('gulp-uglify')
 var minifyCSS = require('gulp-minify-css')
 var imagemin = require('gulp-imagemin')
 const autoprefixer = require('gulp-autoprefixer');
+var sourcemaps = require('gulp-sourcemaps')
+
 
 var src = {
     html: 'src/*.html',
@@ -50,12 +52,14 @@ gulp.task('sass-minify', function () {
 
     gulp
         .src(src.scss)
+        . pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
         .pipe(minifyCSS())
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(dist.css))
 });
 
@@ -67,9 +71,14 @@ gulp.task('js', function () {
 });
 
 // 删除js 压缩js
-gulp.task('js-uglify', function () {
-    gulp.src(src.js)
+gulp.task('js-uglify', function (event) {
+ 
+
+
+    gulp.src(src.js).
+    pipe(sourcemaps.init())
         .pipe(uglify())
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(dist.js));
 });
 
