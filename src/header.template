@@ -1,0 +1,16 @@
+<header class="landing-Header">
+    <div class="header-server-logo">
+    </div>
+    <div class="header-button-container">
+        <a href="#">
+            <div class="landing-button login">
+                <p>Log in</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="landing-button signup">
+                <p>Sign up</p>
+            </div>
+        </a>
+    </div>
+</header>

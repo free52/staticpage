@@ -1,0 +1,35 @@
+<footer class="server-footer-container row">
+    <div class="server-logos-container">
+        <p>COPYRIGHT @ 2018 SERVERSIDE TECHNOLOGIES</p>
+        <div>
+            <img src="images/landing/server-instagram.png" alt="logo" class="social-media-logos" />
+            <img src="images/landing/server-twitter.png" alt="logo" class="social-media-logos" />
+            <img src="images/landing/server-medium.png" alt="logo" class="social-media-logos" />
+        </div>
+        <div class="made-in">
+            <p>Made in Gastown, Vancouver.</p>
+        </div>
+    </div>
+    <div class="server-links-container">
+        <div class="server-link-column non-mobile">
+            <a href="#">
+                <p>Log In</p>
+            </a>
+            <a href="#">
+                <p>Create an Account</p>
+            </a>
+            <a href="#">
+                <p>My Profile</p>
+            </a>
+            <a href="#">
+                <p>Sign Out</p>
+            </a>
+        </div>
+        <div class="server-link-column">
+            <p>About</p>
+            <p>Contact</p>
+            <p>Terms</p>
+            <p>Privacy</p>
+        </div>
+    </div>
+</footer>

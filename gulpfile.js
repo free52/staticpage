@@ -15,7 +15,7 @@ var src = {
     html: 'src/*.html',
     scss: 'src/scss/*.scss',
     js: "src/js/*.js",
-    images: "src/images/*.*"
+    images: "src/images/**/*"
 };
 var dist = {
     html: "./dist/*.html",
@@ -85,7 +85,6 @@ gulp.task('js-uglify', function (event) {
 
 // 图片
 gulp.task('images', function () {
-
     gulp.src(src.images)
         .pipe(gulp.dest(dist.images))
 });

@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/index.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/index.js"></script>
 </head>
 <body>
-    @@include('./view.template')
+  @@include('./header.template')
+  <div class="landing-container">
+    <div class="landing-dashboard">
+      <LandingHeader />
+      <div class="dashboard-container">
+        <div class="dashboard-title">
+          <h1>StaticPage - Home.</h1>
+        </div>
+        <div class="dashboard-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>In vulputate diam sed magna posuere, sit amet dapibus lacus sollicitudin. </p>
+          <p>Nulla rhoncus diam at mauris.</p>
+        </div>
+        <div class="dashboard-button-container">
+          <a href="#">
+            <div class="dashboard-button">
+              <p>GET STARTED</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include('./footer.template')
 </body>
 </html>
